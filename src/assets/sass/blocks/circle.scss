@@ -1,0 +1,27 @@
+.circle{
+    width: 250px;
+    height: 250px;
+
+    background: linear-gradient(to bottom, #f5576c, #f093fb);
+    box-shadow: 0 5px 25px rbga(0,0,0,0.15);
+    border-radius: 60% 40% 49% 51% / 58% 45% 55% 42%;
+
+    animation: circleRadius 4s alternate infinite;
+
+    position: absolute;
+    right: 15rem;
+    z-index: 1;
+    bottom: 10rem;
+}
+
+@keyframes circleRadius{
+    0%{
+        border-radius: 60% 40% 49% 51% / 58% 45% 55% 42%;
+        transform: translate3d(0,0,0);
+    }
+
+    100%{
+        border-radius: 26% 74% 36% 64% / 37% 46% 54% 63%;
+        transform: translate3d(-50px, -50px, 0);
+    }
+}
