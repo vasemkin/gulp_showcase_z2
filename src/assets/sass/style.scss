@@ -1,6 +1,9 @@
 @import "vars";
 @import "mixins";
 
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
+
 /* default */
 html{
     font-size: 15px;
@@ -47,6 +50,7 @@ body{
 @import "blocks/modal";
 @import "blocks/form";
 @import "blocks/input";
+@import "blocks/services";
 
 
 /* vendor */

@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic");
 /* default */
 html {
     font-size: 15px;
@@ -1680,14 +1682,14 @@ body {
 }
 
 .modal__close {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
     padding: 0q;
     background: none;
     border: none;
     position: absolute;
-    top: -2.2rem;
-    right: -2.2rem;
+    top: -1.5rem;
+    right: -1.5rem;
     z-index: 1;
     transition: .5s;
 }
@@ -1764,6 +1766,43 @@ body {
 .input:focus {
     outline: none;
     border-color: #cf246c;
+}
+
+.services {
+    margin-bottom: 2rem;
+}
+
+.services__item {
+    height: 100%;
+    padding: 1.2rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.services__icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+}
+
+.services__title {
+    margin-top: 0.5rem;
+    padding-left: 5rem;
+    color: #121212;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.services__text {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #121212;
 }
 
 /* vendor */
