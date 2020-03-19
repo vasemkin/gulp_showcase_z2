@@ -3,6 +3,10 @@
     padding: 0;
     list-style: none;
 
+    &_modal{
+        margin-top: .2rem;
+    }
+
     &__element{
         display: inline-block;
         vertical-align: middle;
@@ -23,6 +27,15 @@
         }
 
         &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+
+        .contacts_modal & {
+            display: block;
+            margin-right: 0;
+
             &:after{
                 display: none;
             }
