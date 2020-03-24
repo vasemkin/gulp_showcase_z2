@@ -1,18 +1,15 @@
 @import "vars";
-@import "mixins";
 
-/* font */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
 
-/* default */
-html{
+/* Default styles */
+html {
     font-size: 15px;
 }
 
-body{
+body {
     margin: 0;
 
-    background-color: $grey;
+    background-color: $gray;
 
     font-family: 'Montserrat', sans-serif;
     color: $black;
@@ -22,36 +19,42 @@ body{
 
 *,
 *:before,
-*:after{
+*:after {
     box-sizing: border-box;
 }
 
-/* bootstrap */
+
+/* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
-@import "../../../node_modules/bootstrap/scss/grid";
-@import "../../../node_modules/bootstrap/scss/modal";
 @import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/grid";
 
-/* blocks */
+
+/* Blocks */
 @import "blocks/page";
-@import "blocks/content";
 @import "blocks/header";
 @import "blocks/logo";
 @import "blocks/nav";
 @import "blocks/lang";
+@import "blocks/content";
 @import "blocks/intro";
-@import "blocks/footer";
-@import "blocks/btn";
 @import "blocks/contacts";
-@import "blocks/circle";
 @import "blocks/social";
-@import "blocks/modal";
 @import "blocks/form";
 @import "blocks/input";
 @import "blocks/services";
+@import "blocks/portfolio";
+@import "blocks/footer";
 
 
-/* vendor */
+
+/* Vendor libs */
 @import "vendor/slick";
+
+
+
+
+
+

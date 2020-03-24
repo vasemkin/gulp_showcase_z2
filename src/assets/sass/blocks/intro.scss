@@ -1,25 +1,33 @@
-.intro{
-    &__text{
+.intro__text {
+    font-size: 1.2rem;
+    color: $gray_dark;
+}
+
+.intro__title {
+    margin-bottom: .5rem;
+
+    font-size: 3.2rem;
+    line-height: 1.2;
+    color: $black;
+    font-weight: 600;
+
+    @media (max-width: $breakpoint_sm) {
+        font-size: 2rem;
+    }
+}
+
+.intro__subtitle {
+    margin-bottom: 2rem;
+
+    font-size: 1.6rem;
+    color: $black;
+    font-weight: 400;
+
+    @media (max-width: $breakpoint_sm) {
         font-size: 1.2rem;
-        color: $greydark;
     }
+}
 
-    &__title{
-        font-size: 3.2rem;
-        color: $black;
-        font-weight: 600;
-    }
-
-    &__subtitle{
-        font-size: 1.6rem;
-        color: $black;
-        font-weight: 400;
-
-        margin-bottom: 2rem;
-
-        &_pink{
-            color: $pink;
-        }
-    }
-
+.intro__subtitle-pink {
+    color: $pink;
 }

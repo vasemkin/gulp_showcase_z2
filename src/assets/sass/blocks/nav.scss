@@ -1,25 +1,27 @@
 .nav {
-    font-size: 1rem;
     display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+}
 
-    &__link{
-        padding: 0.3rem 1.5rem;
+.nav__link {
+    padding: .3rem 1.5rem;
+    margin-right: 1rem;
 
-        color: $black;
-        text-decoration: none;
-        font-weight: 500;
+    color: $black;
+    text-decoration: none;
 
-        border-radius: 15px;
+    border-radius: 20px;
 
-        transition: .3s;
+    transition: background .1s linear;
 
-        &:hover{
-            background-color: darken($color: $grey, $amount: 3%);
-        }
+    &:hover {
+        background-color: darken($gray, 3%);
+    }
 
-        &.active{
-            background-color: $pink;
-            color: $white;
-        }
+
+    &.active {
+        color: $white;
+        background-color: $pink;
     }
 }

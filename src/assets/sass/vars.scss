@@ -1,12 +1,17 @@
 $white: #fff;
-$pink: #cf246c;
+$pink: #ec3482;
 $black: #121212;
-$grey: #fafafa;
-$greydark: #a1a1a1;
+$gray: #fafafa;
+$gray_dark: #a1a1a1;
 $radius: 10px;
-$radiussecondary: 5px;
-$shadow: 0 0 25px rgba(0,0,0,0.05);
+$radius_sm: 5px;
+$shadow: 0 0 25px rgba(0, 0, 0, .05);
 
-//boots
+
+$breakpoint_xl: 1350px;
+$breakpoint_sm: 575px;
+
+
+// Bootstrap Modal
 $modal-backdrop-bg: #0a1630;
 $modal-backdrop-opacity: .9;

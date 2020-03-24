@@ -1,15 +1,15 @@
-.header{
+.header {
     margin-top: 2rem;
+}
 
-    &__row{
-        align-items: center;
-    }
-
-    &__inner {
-    padding: 0.8rem 1.4rem;
+.header__inner {
+    padding: .8rem 1.4rem;
 
     background-color: $white;
     border-radius: $radius;
     box-shadow: $shadow;
-    }
+}
+
+.header__row {
+    align-items: center;
 }

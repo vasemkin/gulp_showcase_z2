@@ -1,53 +1,55 @@
-.contacts{
+.contacts {
     margin: 1rem 0 0;
     padding: 0;
     list-style: none;
 
-    &_modal{
+    &--modal {
         margin-top: .2rem;
     }
+}
 
-    &__element{
-        display: inline-block;
-        vertical-align: middle;
+.contacts__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2rem;
+    position: relative;
 
-        margin-right: 2rem;
-        position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 1px;
 
-        &:after{
-            content: "";
-            display: block;
-            background-color: $black;
-            width: 10px;
-            height: 1px;
+        background-color: $black;
 
-            position: absolute;
-            right: -1.5rem;
-            top: 50%;
-        }
+        position: absolute;
+        right: -1.5rem;
+        top: 50%;
+        z-index: 1;
+    }
 
-        &:last-child{
-            &:after{
-                display: none;
-            }
-        }
+    &:last-child {
 
-        .contacts_modal & {
-            display: block;
-            margin-right: 0;
-
-            &:after{
-                display: none;
-            }
+        &:after {
+            display: none;
         }
     }
 
-    &__link{
-        color: $black;
-        text-decoration: none;
+    .contacts--modal & {
+        display: block;
+        margin-right: 0;
 
-        &:hover{
-            text-decoration: underline;
+        &:after {
+            display: none;
         }
+    }
+}
+
+.contacts__link {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
     }
 }

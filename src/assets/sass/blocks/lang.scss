@@ -1,18 +1,17 @@
-.lang{
+.lang {
     text-align: right;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+}
 
-    &__item{
-        margin-left: 0.5rem;
-        text-decoration: none;
-        color: $black;
+.lang__item {
+    margin-left: .5rem;
 
-        &.active{
-            color: $pink;
-        }
+    color: $black;
+    text-decoration: none;
+
+    &.active {
+        color: $pink;
     }
-
-
 }

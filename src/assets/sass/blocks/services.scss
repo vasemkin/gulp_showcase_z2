@@ -1,43 +1,39 @@
-.services{
+.services {
     margin-bottom: 2rem;
+}
 
-    &__item{
-        height: 100%;
+.services__item {
+    padding: 1.2rem;
+    height: 100%;
+    position: relative;
 
-        padding: 1.2rem;
-        position: relative;
-    
-        background-color: $white;
-        border-radius: $radius;
-        box-shadow: $shadow;
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}
 
-    }
+.services__icon {
+    width: 50px;
+    height: 50px;
 
-    &__icon{
-        width: 50px;
-        height: 50px;
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    z-index: 1;
+}
 
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        z-index: 1;
-    }
+.services__title {
+    margin-top: .5rem;
+    padding-left: 5rem;
 
-    &__title{
-        margin-top: 0.5rem;
-        padding-left: 5rem;
+    font-size: 1.4rem;
+    color: $black;
+    font-weight: 500;
+}
 
-        color: $black;
-        font-size: 1.4rem;
-        font-weight: 500;
-        font-family: inherit;
-    }
+.services__text {
+    margin-top: 2rem;
 
-    &__text{
-        margin-top: 2rem;
-
-        font-size: 1rem;
-        color: $black;
-
-    }
+    font-size: 1rem;
+    color: $black;
 }
